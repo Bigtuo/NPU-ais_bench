@@ -1,0 +1,18 @@
+# Usage: pip install -r requirements.txt
+
+attrs
+cython
+decorator
+sympy
+cffi
+pyyaml
+pathlib2
+psutil
+protobuf
+requests
+absl-py
+
+scipy==1.7.0
+numpy==1.22.4
+
+opencv-python

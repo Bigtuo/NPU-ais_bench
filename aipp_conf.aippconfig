@@ -1,0 +1,25 @@
+
+# 通道转换rbuv_swap_switch参数设置为true
+# 归一化系数需要根据用户模型实际需求配置，此处取默认值，即不改变像素的值
+# 若配置归一化系数，将应用于通道交换之后的通道
+
+aipp_op { 
+    related_input_rank : 0
+    src_image_size_w : 1280
+    src_image_size_h : 1280
+    crop : false
+    padding : false
+    aipp_mode: static
+    input_format : RGB888_U8
+    csc_switch : false
+    rbuv_swap_switch : true
+    mean_chn_0 : 0
+    mean_chn_1 : 0
+    mean_chn_2 : 0
+    min_chn_0 : 0.0
+    min_chn_1 : 0.0
+    min_chn_2 : 0.0
+    var_reci_chn_0 : 0.00392157
+    var_reci_chn_1 : 0.00392157
+    var_reci_chn_2 : 0.00392157
+}
